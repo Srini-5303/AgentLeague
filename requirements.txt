@@ -1,0 +1,13 @@
+# Core (local-first). Everything needed to run the game 100% locally.
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+httpx==0.28.1
+openai==1.59.6          # used by openai / azure_openai / ollama / foundry-compatible providers
+PyJWT[crypto]==2.10.1   # dev-auth token signing + (later) Entra validation
+pytest==8.3.4
+pytest-asyncio==0.25.2
+
+# Azure extras live in requirements-azure.txt and are imported lazily only when RUNTIME=azure.

@@ -1,0 +1,97 @@
+:root {
+  --bg: #0f1115;
+  --panel: #181b22;
+  --ink: #e6e1d6;
+  --muted: #8a8f9c;
+  --accent: #c8a24a;
+  --moon: #9fb6d6;
+  --danger: #c8503a;
+  --success: #5aa469;
+  --partial: #c8a24a;
+  --failure: #c8503a;
+  font-family: "Iowan Old Style", Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); }
+h1, h3 { font-weight: 600; letter-spacing: 0.02em; }
+
+.login {
+  min-height: 100vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; gap: 1rem; background: radial-gradient(circle at 50% 30%, #1c2330, #0f1115);
+}
+.login h1 { font-size: 3rem; color: var(--moon); margin: 0; }
+.login button, .app button { cursor: pointer; }
+
+.app { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2a2f3a; padding-bottom: 0.5rem; }
+header h1 { font-size: 1.4rem; color: var(--accent); margin: 0; }
+.logout { background: none; border: 1px solid #2a2f3a; color: var(--muted); padding: 0.3rem 0.7rem; border-radius: 4px; }
+
+main { display: grid; grid-template-columns: 1fr 340px; gap: 1rem; margin-top: 1rem; }
+@media (max-width: 860px) { main { grid-template-columns: 1fr; } }
+
+.story { display: flex; flex-direction: column; min-height: 70vh; }
+.adventure-log { flex: 1; background: var(--panel); border-radius: 8px; padding: 1.2rem 1.4rem; overflow-y: auto; max-height: 64vh; }
+.narration { font-size: 1.12rem; line-height: 1.7; white-space: pre-wrap; }
+.deliberating { color: var(--moon); font-style: italic; }
+.deliberating .agents { color: var(--muted); }
+.dots { animation: pulse 1.2s infinite; }
+@keyframes pulse { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+
+.player-input { margin-top: 0.8rem; }
+.quick-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+.quick-action { background: #20242e; border: 1px solid #2f3542; color: var(--ink); padding: 0.4rem 0.8rem; border-radius: 16px; }
+.quick-action:hover:not(:disabled) { border-color: var(--accent); }
+.player-input form { display: flex; gap: 0.5rem; }
+.player-input input { flex: 1; background: #12151b; border: 1px solid #2f3542; color: var(--ink); padding: 0.6rem 0.8rem; border-radius: 6px; font-size: 1rem; }
+.player-input button[type="submit"] { background: var(--accent); border: none; color: #1a1206; font-weight: 700; padding: 0 1.2rem; border-radius: 6px; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.sidebar { display: flex; flex-direction: column; gap: 0.8rem; }
+.panel { background: var(--panel); border-radius: 8px; padding: 0.8rem 1rem; }
+.panel h3 { margin: 0 0 0.6rem; color: var(--accent); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+.char { margin-bottom: 0.7rem; }
+.char.player .char-name { color: var(--moon); }
+.char-head { display: flex; justify-content: space-between; font-size: 0.9rem; }
+.char-class { color: var(--muted); font-size: 0.8rem; }
+.hp-bar { position: relative; height: 16px; background: #2a2f3a; border-radius: 8px; overflow: hidden; margin-top: 2px; }
+.hp-fill { height: 100%; background: linear-gradient(90deg, #4a7a52, var(--success)); transition: width 0.4s; }
+.hp-text { position: absolute; inset: 0; text-align: center; font-size: 0.72rem; line-height: 16px; }
+.conditions { margin-top: 3px; display: flex; flex-wrap: wrap; gap: 3px; }
+.condition { background: #3a2a2a; color: #d8a; font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; }
+.trust { font-size: 0.75rem; color: var(--muted); }
+
+.quest-where > div { display: flex; flex-direction: column; margin-bottom: 0.4rem; }
+.label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; }
+.quest-log { margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+
+.roll { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+.d20 { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 6px; background: #20242e; border: 2px solid var(--muted); }
+.roll.success .d20 { border-color: var(--success); }
+.roll.partial .d20 { border-color: var(--partial); }
+.roll.failure .d20 { border-color: var(--failure); }
+.roll-detail { display: flex; flex-direction: column; font-size: 0.82rem; }
+.roll-detail em { color: var(--accent); font-style: normal; }
+.consequence { color: var(--muted); }
+
+.telemetry .toggle { background: none; border: none; color: var(--accent); font-size: 0.95rem; cursor: pointer; padding: 0; text-transform: uppercase; letter-spacing: 0.08em; }
+.gantt { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 4px; }
+.gantt-row { display: grid; grid-template-columns: 130px 1fr; align-items: center; font-size: 0.72rem; }
+.gantt-label { color: var(--muted); }
+.gantt-track { background: #12151b; border-radius: 4px; }
+.gantt-bar { background: linear-gradient(90deg, #3a5a7a, var(--moon)); color: #0b0e13; padding: 1px 4px; border-radius: 4px; font-size: 0.65rem; min-width: 28px; text-align: right; }
+.agent-msgs { margin-top: 0.6rem; font-size: 0.8rem; }
+.agent-msg { color: var(--muted); margin-bottom: 0.2rem; }
+.agent-msg strong { color: var(--ink); text-transform: capitalize; }
+
+.error-banner { background: #3a2018; border: 1px solid var(--danger); color: #e8b0a0; padding: 0.5rem 0.8rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.85rem; }
+
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; }
+.modal { background: var(--panel); border: 1px solid var(--danger); border-radius: 10px; padding: 1.5rem; max-width: 420px; text-align: center; }
+.modal-action { font-style: italic; color: var(--moon); }
+.modal-buttons { display: flex; gap: 0.8rem; justify-content: center; margin-top: 1rem; }
+.modal .danger { background: var(--danger); border: none; color: #fff; padding: 0.5rem 1rem; border-radius: 6px; }
+.modal button:not(.danger) { background: #20242e; border: 1px solid #2f3542; color: var(--ink); padding: 0.5rem 1rem; border-radius: 6px; }

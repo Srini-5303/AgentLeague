@@ -1,0 +1,9 @@
+# Azure-only dependencies. Install with: pip install -r requirements-azure.txt
+# These are imported lazily inside the azure implementations, so local dev does not need them.
+-r requirements.txt
+azure-identity==1.19.0
+azure-cosmos==4.9.0
+azure-ai-projects==1.0.0          # verify latest at deploy time — preview API surface may drift
+azure-search-documents==11.5.2
+azure-monitor-opentelemetry==1.6.4
+opentelemetry-sdk==1.29.0
