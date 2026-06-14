@@ -76,26 +76,42 @@ class GameMaster:
         self._locks: dict[str, asyncio.Lock] = defaultdict(asyncio.Lock)
 
     # ── session bootstrap ────────────────────────────────────────────────
+    async def _new_campaign(self, user_id: str) -> CampaignState:
+        """Create and persist a brand-new campaign (fresh session) for a user."""
+        session_id = str(uuid.uuid4())
+        await self.state.create_user(UserRecord(id=user_id, session_id=session_id))
+        party = [
+            CharacterState(agent="player", name="Aria", char_class="Wanderer",
+                           health=24, max_health=24, attack_bonus=3, armor_class=13, is_player=True),
+            *[c.model_copy(deep=True) for c in _STARTING_COMPANIONS],
+        ]
+        fresh = CampaignState(session_id=session_id, user_id=user_id, party=party,
+                              quest_log=["Find the Starwell Relic before Kael Thorn does."])
+        await self.state.write_session(fresh)
+        return fresh
+
     async def _resolve_session(self, user_id: str) -> CampaignState:
         user = await self.state.get_user(user_id)
         if user is None:
-            session_id = str(uuid.uuid4())
-            await self.state.create_user(UserRecord(id=user_id, session_id=session_id))
-            party = [
-                CharacterState(agent="player", name="Aria", char_class="Wanderer",
-                               health=24, max_health=24, attack_bonus=3, armor_class=13, is_player=True),
-                *[c.model_copy(deep=True) for c in _STARTING_COMPANIONS],
-            ]
-            fresh = CampaignState(session_id=session_id, user_id=user_id, party=party,
-                                  quest_log=["Find the Starwell Relic before Kael Thorn does."])
-            await self.state.write_session(fresh)
-            return fresh
+            return await self._new_campaign(user_id)
         existing = await self.state.get_session(user.session_id)
         if existing is None:
             # User record without a session (shouldn't happen) — rebuild empty.
             existing = CampaignState(session_id=user.session_id, user_id=user_id)
             await self.state.write_session(existing)
         return existing
+
+    async def reset_session(self, authorization: Optional[str]) -> CampaignState:
+        """Delete the player's saved campaign and start a fresh one. Validates the
+        JWT first, then deletes the old session + user record (point deletes) and
+        bootstraps a new campaign owned by the same user."""
+        user_id = await self.auth.validate(authorization)
+        async with self._locks[user_id]:
+            user = await self.state.get_user(user_id)
+            if user is not None:
+                await self.state.delete_session(user.session_id)
+                await self.state.delete_user(user_id)
+            return await self._new_campaign(user_id)
 
     # ── the turn ─────────────────────────────────────────────────────────
     async def run_turn(self, bearer_token: str | None, req: TurnRequest) -> AsyncIterator[dict]:
@@ -206,6 +222,9 @@ class GameMaster:
             update, choices = await update_task, await choices_task
 
         apply_state_update(state, update)
+        # Record the FULL turn narration for the "previously on" recap (the
+        # durability write above only had the first streamed token).
+        self._advance_history(state, narration)
         state.recent_history = await maybe_summarize(
             state.recent_history, state.turn, self.s.history_summarize_every,
             self.llm, self.s.narrator_model,
@@ -252,10 +271,10 @@ class GameMaster:
             state.recent_history = state.recent_history[-8:]
 
     async def _commit_state(self, state: CampaignState, narration: str) -> None:
-        """Durability write fired during streaming: advance the turn + history so a
-        mid-stream disconnect still persists progress."""
+        """Durability write fired during streaming: advance the turn so a mid-stream
+        disconnect still persists progress. The recap history snippet is recorded
+        post-stream from the full narration (see run_turn), not here."""
         state.turn += 1
-        self._advance_history(state, narration)
         state.updated_at = utcnow()
         await self._persist(state)
 

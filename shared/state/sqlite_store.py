@@ -69,5 +69,17 @@ class SQLiteStateStore(StateStore):
                 )
         await asyncio.to_thread(_write)
 
+    async def delete_user(self, user_id: str) -> None:
+        def _del():
+            with self._connect() as c:
+                c.execute("DELETE FROM users WHERE user_id = ?", (user_id,))
+        await asyncio.to_thread(_del)
+
+    async def delete_session(self, session_id: str) -> None:
+        def _del():
+            with self._connect() as c:
+                c.execute("DELETE FROM sessions WHERE session_id = ?", (session_id,))
+        await asyncio.to_thread(_del)
+
     async def close(self) -> None:
         return None

@@ -87,3 +87,15 @@ async def state(request: Request, authorization: str | None = Header(default=Non
     if campaign.user_id != user_id:
         return JSONResponse({"message": "ownership mismatch"}, status_code=403)
     return campaign.model_dump()
+
+
+@app.post("/reset")
+async def reset(request: Request, authorization: str | None = Header(default=None)):
+    """Delete the player's saved campaign and start a fresh one. Returns the new
+    campaign state so the frontend can reattach without a reload."""
+    gm: GameMaster = request.app.state.gm
+    try:
+        campaign = await gm.reset_session(authorization)
+    except AuthError as e:
+        return JSONResponse({"message": str(e)}, status_code=401)
+    return campaign.model_dump()

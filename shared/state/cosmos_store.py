@@ -72,6 +72,20 @@ class CosmosStateStore(StateStore):
                 pass
         await self._sessions.upsert_item(body)
 
+    async def delete_user(self, user_id: str) -> None:
+        from azure.cosmos.exceptions import CosmosResourceNotFoundError
+        try:
+            await self._users.delete_item(item=user_id, partition_key=user_id)
+        except CosmosResourceNotFoundError:
+            pass
+
+    async def delete_session(self, session_id: str) -> None:
+        from azure.cosmos.exceptions import CosmosResourceNotFoundError
+        try:
+            await self._sessions.delete_item(item=session_id, partition_key=session_id)
+        except CosmosResourceNotFoundError:
+            pass
+
     async def close(self) -> None:
         await self._client.close()
         await self._credential.close()

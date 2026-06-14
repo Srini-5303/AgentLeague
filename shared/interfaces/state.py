@@ -28,4 +28,12 @@ class StateStore(ABC):
         Azure; locally a plain upsert is fine."""
 
     @abstractmethod
+    async def delete_user(self, user_id: str) -> None:
+        """Remove a user record (point delete by user_id). No-op if absent."""
+
+    @abstractmethod
+    async def delete_session(self, session_id: str) -> None:
+        """Remove a campaign session (point delete by session_id). No-op if absent."""
+
+    @abstractmethod
     async def close(self) -> None: ...

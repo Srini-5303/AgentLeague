@@ -1,0 +1,102 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - button "New Game" [ref=e7] [cursor=pointer]
+      - button "Leave" [ref=e8] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - paragraph [ref=e82]: "You lift the glowing Shard of Máni high, its pale light casting shifting shadows over the blackened stones of the ruined chapel. The fractured gleam seems to pulse in rhythm with your heartbeat, a fragile beacon against the encroaching gloom. Your call rings out, steady and commanding, drawing your companions to the narrow threshold where the chapel’s doors sag, half-melted by past fire. Kael moves to the front, shield raised like a bastion against the unknown, his voice a vow of protection so fierce it steels your own resolve. Lyra steps forward, her gaze fixed intently on the shifting patterns within the Shard’s gleam. Her hands move in subtle gestures as she murmurs old runes, the shard’s fractured light unraveling secrets hidden deep in moon-ash and ancient magic. Her eyes glow briefly, and then she speaks with the quiet certainty of one who has glimpsed a thread of truth within the chaos: “The shard’s glow reveals a hidden sigil — a map not just to the Moonlit Gate, but beyond it, tracing a path to a relic the Norns did not intend to reveal. The Starwell Relic lies within reach, but its guarding wards have grown restless with the fracture’s wild magic. We will face more than mere shadows.” You feel the weight of her words like the cold moonlight itself — the fragile calm will not last. Yet here, at the chapel threshold, you and your companions find a moment to steel yourselves, bound by oath and shard alike. The night air stirs with a whisper of winds and distant, mournful howls beyond the broken walls. The path forward is perilous, but your next step is clear: either press into the darkness toward the Starwell Relic or fortify your position and prepare against what might follow through the shattered moon’s cursed embrace."
+      - generic [ref=e12]:
+        - generic [ref=e83]:
+          - button "Enter chapel, seek Starwell Relic" [ref=e84] [cursor=pointer]
+          - button "Fortify camp, prepare for ambush" [ref=e85] [cursor=pointer]
+          - button "Consult Lyra on ward defenses" [ref=e86] [cursor=pointer]
+          - button "Scout perimeter for lurking threats" [ref=e87] [cursor=pointer]
+        - generic [ref=e13]:
+          - textbox "What do you do?" [ref=e14]
+          - button "Act" [disabled] [ref=e15]
+    - complementary [ref=e16]:
+      - generic [ref=e36]:
+        - heading "The Party" [level=3] [ref=e37]
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: Aria
+            - generic [ref=e41]: Wanderer
+          - generic [ref=e44]: 14/24
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: Bran Ironvale
+            - generic [ref=e48]: Warrior
+          - generic [ref=e51]: 17/28
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: Lyra Vey
+            - generic [ref=e55]: Mage
+          - generic [ref=e58]: 10/18
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: Sable Dusk
+            - generic [ref=e62]: Rogue
+          - generic [ref=e65]: 19/20
+          - generic [ref=e67]: grave-rot
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: Mirra of the Root
+            - generic [ref=e71]: Healer
+          - generic [ref=e74]: 20/20
+      - generic [ref=e17]:
+        - heading "Quest Journal" [level=3] [ref=e18]
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - generic [ref=e21]: Location
+            - generic [ref=e75]: The Ruined Chapel
+          - generic [ref=e22]:
+            - generic [ref=e23]: Quest
+            - generic [ref=e24]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e25]: (stage 4)
+        - list [ref=e76]:
+          - listitem [ref=e77]: Find the Starwell Relic before Kael Thorn does.
+          - listitem [ref=e78]: Discovered partial awakening of the Vanir ward at the Ruined Chapel altar, revealing fragments of a map to the Moonlit Gate.
+          - listitem [ref=e79]: Obtained the Starwell Relic from the Ruined Chapel.
+          - listitem [ref=e80]: Entered the Ruined Chapel and discovered the burned altar with the eye-sigil pointing toward the Moonlit Gate. The path to the Well of Urðr and the Starwell Relic continues.
+          - listitem [ref=e81]: Discovered the nature of the runes in the Ruined Chapel; they protect the Starwell Relic beneath the altar with powerful Veum magic.
+          - listitem [ref=e88]: Discovered hidden sigil revealing path to the Starwell Relic beyond the Moonlit Gate; wards guarding the relic are restless due to the shard's wild magic.
+      - generic [ref=e89]:
+        - heading "Dice" [level=3] [ref=e90]
+        - generic [ref=e91]:
+          - generic [ref=e92]: "15"
+          - generic [ref=e93]:
+            - strong [ref=e94]: mage · Arcana
+            - generic [ref=e95]:
+              - text: 20 vs DC 15 →
+              - emphasis [ref=e96]: success
+      - generic [ref=e97]:
+        - button "▾ Agent Telemetry · turn 19 · 5640ms" [ref=e98] [cursor=pointer]
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e101]: gm.iq_query
+            - generic [ref=e103]: 0ms
+          - generic [ref=e104]:
+            - generic [ref=e105]: warrior.invoke
+            - generic [ref=e107]: 1585ms
+          - generic [ref=e108]:
+            - generic [ref=e109]: mage.invoke
+            - generic [ref=e111]: 1938ms
+          - generic [ref=e112]:
+            - generic [ref=e113]: gm.roll_resolution
+            - generic [ref=e115]: 0ms
+          - generic [ref=e116]:
+            - generic [ref=e117]: gm.synthesis_stream
+            - generic [ref=e119]: 2880ms
+          - generic [ref=e120]:
+            - generic [ref=e121]: gm.state_update
+            - generic [ref=e123]: 812ms
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - strong [ref=e126]: "warrior:"
+            - text: “Hold fast at the doors! I take the vanguard, shield raised. No shadow or spirit breaches this line while I breathe.”
+          - generic [ref=e127]:
+            - strong [ref=e128]: "mage:"
+            - text: “The shards of Máni pulse with a fractured light, a silent testament to the Sky's broken fate. Regrouping here allows us to study its runes with care, safer from the unpredictable magic that seeps from the fracture. Let us not waste this brief respite. If you will, I shall examine the shard's glint for sigils, seeking the wisdom the Norns might yet weave through it.”

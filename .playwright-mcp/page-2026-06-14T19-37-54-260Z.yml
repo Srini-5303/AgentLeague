@@ -1,0 +1,51 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - button "New Game" [ref=e7] [cursor=pointer]
+      - button "Leave" [ref=e8] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e23]:
+      - textbox "What do you do?" [ref=e24]
+      - button "Act" [disabled] [ref=e25]
+    - complementary [ref=e26]:
+      - generic [ref=e27]:
+        - heading "The Party" [level=3] [ref=e28]
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: Aria
+            - generic [ref=e32]: Wanderer
+          - generic [ref=e35]: 24/24
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: Bran Ironvale
+            - generic [ref=e39]: Warrior
+          - generic [ref=e42]: 28/28
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Lyra Vey
+            - generic [ref=e46]: Mage
+          - generic [ref=e49]: 18/18
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Sable Dusk
+            - generic [ref=e53]: Rogue
+          - generic [ref=e56]: 20/20
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: Mirra of the Root
+            - generic [ref=e62]: Healer
+          - generic [ref=e65]: 20/20
+      - generic [ref=e66]:
+        - heading "Quest Journal" [level=3] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: Location
+            - generic [ref=e71]: The Ruined Chapel
+          - generic [ref=e72]:
+            - generic [ref=e73]: Quest
+            - generic [ref=e74]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e75]: (stage 1)
+        - list [ref=e76]:
+          - listitem [ref=e77]: Find the Starwell Relic before Kael Thorn does.

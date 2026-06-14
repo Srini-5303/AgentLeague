@@ -1,0 +1,18 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - button "New Game" [ref=e7] [cursor=pointer]
+      - button "Leave" [ref=e8] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e13]:
+      - textbox "What do you do?" [ref=e14]
+      - button "Act" [disabled] [ref=e15]
+    - complementary [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Quest Journal" [level=3] [ref=e18]
+        - generic [ref=e19]:
+          - generic [ref=e21]: Location
+          - generic [ref=e22]:
+            - generic [ref=e23]: Quest
+            - emphasis [ref=e25]: (stage 1)

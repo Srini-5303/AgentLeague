@@ -10,6 +10,7 @@ export default defineConfig({
     proxy: {
       "/turn": { target: "http://localhost:8000", changeOrigin: true },
       "/state": { target: "http://localhost:8000", changeOrigin: true },
+      "/reset": { target: "http://localhost:8000", changeOrigin: true },
       "/health": { target: "http://localhost:8000", changeOrigin: true },
     },
   },

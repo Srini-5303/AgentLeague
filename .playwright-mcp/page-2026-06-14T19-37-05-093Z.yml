@@ -1,0 +1,68 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - button "New Game" [ref=e7] [cursor=pointer]
+      - button "Leave" [ref=e8] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - heading "Previously on… The Shards of Máni" [level=4] [ref=e13]
+        - paragraph [ref=e14]: "Turn 12: The"
+        - paragraph [ref=e15]: "Turn 13: The"
+        - paragraph [ref=e16]: "Turn 14: The"
+        - paragraph [ref=e17]: "Turn 15: You"
+        - paragraph [ref=e18]: "Turn 16: Your"
+        - paragraph [ref=e19]: "Turn 17: You"
+        - paragraph [ref=e20]: "Turn 18: You"
+        - paragraph [ref=e21]: "Turn 19: You lift the glowing Shard of Máni high, its pale light casting shifting shadows over the blackened stones of the ruined chapel. The fractured gleam seems to pulse in rhythm with your heartbeat, a fragile beacon against the encroaching gloo…"
+      - generic [ref=e23]:
+        - textbox "What do you do?" [ref=e24]
+        - button "Act" [disabled] [ref=e25]
+    - complementary [ref=e26]:
+      - generic [ref=e27]:
+        - heading "The Party" [level=3] [ref=e28]
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: Aria
+            - generic [ref=e32]: Wanderer
+          - generic [ref=e35]: 14/24
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: Bran Ironvale
+            - generic [ref=e39]: Warrior
+          - generic [ref=e42]: 17/28
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Lyra Vey
+            - generic [ref=e46]: Mage
+          - generic [ref=e49]: 10/18
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Sable Dusk
+            - generic [ref=e53]: Rogue
+          - generic [ref=e56]: 19/20
+          - generic [ref=e58]: grave-rot
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: Mirra of the Root
+            - generic [ref=e62]: Healer
+          - generic [ref=e65]: 20/20
+      - generic [ref=e66]:
+        - heading "Quest Journal" [level=3] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: Location
+            - generic [ref=e71]: The Ruined Chapel
+          - generic [ref=e72]:
+            - generic [ref=e73]: Quest
+            - generic [ref=e74]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e75]: (stage 4)
+        - list [ref=e76]:
+          - listitem [ref=e77]: Find the Starwell Relic before Kael Thorn does.
+          - listitem [ref=e78]: Discovered partial awakening of the Vanir ward at the Ruined Chapel altar, revealing fragments of a map to the Moonlit Gate.
+          - listitem [ref=e79]: Obtained the Starwell Relic from the Ruined Chapel.
+          - listitem [ref=e80]: Entered the Ruined Chapel and discovered the burned altar with the eye-sigil pointing toward the Moonlit Gate. The path to the Well of Urðr and the Starwell Relic continues.
+          - listitem [ref=e81]: Discovered the nature of the runes in the Ruined Chapel; they protect the Starwell Relic beneath the altar with powerful Veum magic.
+          - listitem [ref=e82]: Discovered hidden sigil revealing path to the Starwell Relic beyond the Moonlit Gate; wards guarding the relic are restless due to the shard's wild magic.

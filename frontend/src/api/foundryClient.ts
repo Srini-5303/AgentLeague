@@ -52,3 +52,13 @@ export async function fetchState(token: string | null) {
   if (!res.ok) return null;
   return res.json();
 }
+
+/** Delete the saved campaign and start a fresh one. Returns the new state. */
+export async function resetSession(token: string | null) {
+  const res = await fetch(`${API_BASE}/reset`, {
+    method: "POST",
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+  });
+  if (!res.ok) throw new Error(`reset failed (${res.status})`);
+  return res.json();
+}
