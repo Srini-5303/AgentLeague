@@ -1,0 +1,101 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e116]: "Bran moves with assured steps, his shield steady before him, muscles coiled for any sudden threat as you push deeper into the husk of the ruined chapel. Shadows cling like cobwebs to the crumbled pews and shattered altar, but Bran’s vigilance keeps the lurking darkness at bay. His sharp eyes catch shifts in the gloom—fallen stones, twisted metal, but nothing that dares to step into the open just yet. Kneeling beside a weathered pillar, you trace the ancient runes carved deep into its crumbling surface. Your fingers brush away centuries of dust as a pale glow begins to shimmer faintly in the grooves—the moon-ash reacting to the arcane residue long left behind. The runes pulse with fractured magic, speaking in whispers only you can hear. You glean the faint outline of a protective ward, now a fragile echo of power that once shielded the chapel like a guardian’s breath. No active traps remain, but the warning is clear: this place was sanctified against things best left outside. With Bran’s strength holding the line and your insight peeling back the chapel’s secrets, the path ahead opens. The scent of smoke and old stone draws you further in—something calls from the shadows beyond the shattered altar, something tied to the star-lit promise of the relic you seek. What will you do next?"
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Examine the glowing runes more closely" [ref=e117] [cursor=pointer]
+          - button "Signal Bran to advance cautiously" [ref=e118] [cursor=pointer]
+          - button "Move toward the altar's shadowy depths" [ref=e119] [cursor=pointer]
+          - button "Prepare your weapon for potential danger" [ref=e120] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 28/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 18/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 1)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+      - generic [ref=e121]:
+        - heading "Dice" [level=3] [ref=e122]
+        - generic [ref=e123]:
+          - generic [ref=e124]: "16"
+          - generic [ref=e125]:
+            - strong [ref=e126]: warrior · Athletics
+            - generic [ref=e127]:
+              - text: 18 vs DC 12 →
+              - emphasis [ref=e128]: success
+        - generic [ref=e129]:
+          - generic [ref=e130]: "13"
+          - generic [ref=e131]:
+            - strong [ref=e132]: mage · Arcana
+            - generic [ref=e133]:
+              - text: 16 vs DC 15 →
+              - emphasis [ref=e134]: success
+      - generic [ref=e84]:
+        - button "▾ Agent Telemetry · turn 4 · 5293ms" [ref=e135] [cursor=pointer]
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: gm.iq_query
+            - generic [ref=e90]: 0ms
+          - generic [ref=e91]:
+            - generic [ref=e92]: warrior.invoke
+            - generic [ref=e94]: 1605ms
+          - generic [ref=e95]:
+            - generic [ref=e96]: mage.invoke
+            - generic [ref=e98]: 1688ms
+          - generic [ref=e99]:
+            - generic [ref=e100]: gm.roll_resolution
+            - generic [ref=e102]: 0ms
+          - generic [ref=e103]:
+            - generic [ref=e104]: gm.synthesis_stream
+            - generic [ref=e106]: 2054ms
+          - generic [ref=e107]:
+            - generic [ref=e108]: gm.state_update
+            - generic [ref=e110]: 1539ms
+        - generic [ref=e111]:
+          - generic [ref=e136]:
+            - strong [ref=e137]: "warrior:"
+            - text: “Keep close, Aria. The shadows here breed treachery. I will take point and shield our path. Let no foul spirit catch us off guard.”
+          - generic [ref=e112]:
+            - strong [ref=e113]: "mage:"
+            - text: “The deeper we venture into these ancient stones, the more the air thickens with the memory of old magics. I sense the lingering sigils of protective wards long since broken. Let us tread carefully; such ruins often hide arcane traps or lingering spirits bound to the chapel's ruin. Shall I attempt to read any remaining runes or glyphs that might reveal their purpose or warn us of danger?”

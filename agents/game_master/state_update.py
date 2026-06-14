@@ -25,8 +25,16 @@ _UPDATE_SCHEMA = {
         "location": {"type": ["string", "null"]},
         "quest_log_add": {"type": ["string", "null"]},
         "world_flags_set": {
-            "type": "object",
-            "additionalProperties": {"type": ["string", "boolean", "integer"]},
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": {
+                    "flag": {"type": "string"},
+                    "value": {"type": ["string", "boolean", "integer"]},
+                },
+                "required": ["flag", "value"],
+            },
         },
         "party_damage": {
             "type": "array",
@@ -53,6 +61,7 @@ _STAGE_FLAGS = [(1, "sigil_read"), (2, "gate_open"), (3, "shard_taken")]
 async def extract_state_update(
     narration: str, state: CampaignState, llm: LLMClient, model: str
 ) -> Optional[dict]:
+    roster = ", ".join(f"{c.agent} ({c.name})" for c in state.party)
     messages: list[LLMMessage] = [
         {
             "role": "system",
@@ -61,11 +70,19 @@ async def extract_state_update(
                 "report ONLY concrete state changes as JSON matching the given schema. Use null / "
                 "empty when nothing changed. Valid world flags include: sigil_read, gate_open, "
                 "shard_taken, hedeby_shard, yrsa_trust, court_pact, rival_present, kael_trust_level, "
-                "ending. hp_delta is negative for damage, positive for healing. Do not invent events "
-                "the narration did not describe."
+                "ending. hp_delta is negative for damage, positive for healing; report the NET change "
+                "for the turn (if a character is wounded and then healed, report only the remaining "
+                "net delta). For party_damage.agent use the agent KEY (e.g. warrior, mage), NOT the "
+                "character's name. Do not invent events the narration did not describe."
             ),
         },
-        {"role": "user", "content": f"CURRENT LOCATION: {state.location}\nNARRATION:\n{narration[-2000:]}"},
+        {
+            "role": "user",
+            "content": (
+                f"PARTY (agent_key -> name): {roster}\n"
+                f"CURRENT LOCATION: {state.location}\nNARRATION:\n{narration[-2000:]}"
+            ),
+        },
     ]
     try:
         raw = await llm.complete(messages, model=model, json_schema=_UPDATE_SCHEMA, temperature=0.2, max_tokens=300)
@@ -84,10 +101,10 @@ def apply_state_update(state: CampaignState, update: Optional[dict]) -> None:
         entry = update["quest_log_add"].strip()
         if entry and entry not in state.quest_log:
             state.quest_log.append(entry)
-    for k, v in (update.get("world_flags_set") or {}).items():
-        state.world_flags[k] = v
+    for flag, value in _iter_flags(update.get("world_flags_set")):
+        state.world_flags[flag] = value
     for dmg in update.get("party_damage") or []:
-        member = next((c for c in state.party if c.agent == dmg.get("agent")), None)
+        member = _match_member(state, dmg.get("agent"))
         if not member:
             continue
         member.health = max(0, min(member.max_health, member.health + int(dmg.get("hp_delta", 0))))
@@ -96,6 +113,32 @@ def apply_state_update(state: CampaignState, update: Optional[dict]) -> None:
         if dmg.get("remove_condition") and dmg["remove_condition"] in member.conditions:
             member.conditions.remove(dmg["remove_condition"])
     _advance_quest_stage(state)
+
+
+def _iter_flags(raw):
+    """Yield (flag, value) pairs from either the strict-schema list form
+    [{"flag": ..., "value": ...}] or the legacy/dict form {flag: value}."""
+    if isinstance(raw, dict):
+        yield from raw.items()
+    elif isinstance(raw, list):
+        for item in raw:
+            if isinstance(item, dict) and item.get("flag"):
+                yield item["flag"], item.get("value")
+
+
+def _match_member(state: CampaignState, ident: Optional[str]):
+    """Resolve a party member by agent key or character name (the bookkeeper LLM
+    uses either). Matches on agent key, full name, or first name, case-insensitively."""
+    if not ident:
+        return None
+    key = ident.strip().lower()
+    for c in state.party:
+        if c.agent.lower() == key:
+            return c
+    for c in state.party:
+        if c.name.lower() == key or c.name.lower().split()[0] == key:
+            return c
+    return None
 
 
 def _advance_quest_stage(state: CampaignState) -> None:

@@ -1,0 +1,101 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e64]: The flickering light of your torch casts wavering shadows across the crumbled altar and scorched wooden beams of the ruined chapel. You crouch beside the largest stone slab, fingertips tracing the faintly etched runes as the mage murmurs their ancient names, eyes narrowing in concentration. Their voice carries the weight of old magic, but the runes resist full clarity, whispering fragments of their meaning—a protective ward, perhaps, but veiled in mystery and age. Around you, the healer moves methodically, her gaze sweeping the walls and rubble, searching for signs hidden beneath layers of dirt and ash. Yet despite her diligence, the secrets you seek remain stubbornly out of reach; the runes do not glow with the Moon-Ash’s faint light here, and any insight slips through her grasp like smoke. Lyra frowns, lifting a small horn vial glowing dimly with pale dust. "These markings hint at a ward, but it's incomplete. We need more—maybe the relic’s closer than we think, or deeper still in this place." Her fingers brush the runes again, but with less certainty now. The chapel holds its silence, the air thick with the scent of burnt wood and the weight of unseen eyes. Somewhere beyond these walls, the Starwell Relic waits, its secrets pressed just out of reach. Your hands still tingle with the rune’s latent power, and the path forward feels crooked—part promise, part warning. What will you do next?
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Search deeper within the chapel ruins" [ref=e66] [cursor=pointer]
+          - button "Consult the mage about rune meanings" [ref=e67] [cursor=pointer]
+          - button "Follow the healer’s gaze for clues" [ref=e68] [cursor=pointer]
+          - button "Inspect the horn vial closely" [ref=e69] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 28/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 18/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 1)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+      - generic [ref=e70]:
+        - heading "Dice" [level=3] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]: "7"
+          - generic [ref=e74]:
+            - strong [ref=e75]: mage · Arcana
+            - generic [ref=e76]:
+              - text: 10 vs DC 12 →
+              - emphasis [ref=e77]: partial
+        - generic [ref=e78]:
+          - generic [ref=e79]: "3"
+          - generic [ref=e80]:
+            - strong [ref=e81]: healer · Insight
+            - generic [ref=e82]:
+              - text: 5 vs DC 15 →
+              - emphasis [ref=e83]: failure
+      - generic [ref=e84]:
+        - button "▾ Agent Telemetry · turn 3 · 5282ms" [ref=e85] [cursor=pointer]
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: gm.iq_query
+            - generic [ref=e90]: 0ms
+          - generic [ref=e91]:
+            - generic [ref=e92]: healer.invoke
+            - generic [ref=e94]: 1981ms
+          - generic [ref=e95]:
+            - generic [ref=e96]: mage.invoke
+            - generic [ref=e98]: 2059ms
+          - generic [ref=e99]:
+            - generic [ref=e100]: gm.roll_resolution
+            - generic [ref=e102]: 0ms
+          - generic [ref=e103]:
+            - generic [ref=e104]: gm.synthesis_stream
+            - generic [ref=e106]: 2363ms
+          - generic [ref=e107]:
+            - generic [ref=e108]: gm.state_update
+            - generic [ref=e110]: 855ms
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - strong [ref=e113]: "mage:"
+            - text: “The stones of this chapel bear faint inscriptions, worn by time but not erased. I perceive runes of protection, older than the chapel’s ruin itself—likely carved before Máni shattered. If we can trace their pattern, they may reveal the path to the Starwell Relic or warn us of warding magics. I will examine them more closely, but I require a moment's focus.”
+          - generic [ref=e114]:
+            - strong [ref=e115]: "healer:"
+            - text: “Let us gather close and cast our eyes with care upon this place. Ancient runes often hide truths beneath the dust and ruin. Together, we may find what the chapel guards in silence.”

@@ -1,0 +1,81 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e146]: The draugr snarls, its rotted lips peeling back as it swings a heavy, rusted blade at you. You raise your shield just in time, the vicious strike thudding against the iron with a sickening clang. The creature reels back from your counterattack — a solid blow from your axe driving it sideways, staggering but far from finished. Your stance holds firm, a wall against the dark fury surging through this twisted corpse. Sable presses forward, trying to circle low and strike at the draugr’s vulnerable side, but the creature's unnatural senses catch the movement. It snaps its head around just in time, a guttural rasp warning you it will not be caught unawares. Your attempt to flank fails, but you remain ready, dagger sharp and eyes sharp. Mirra’s voice rises in chant beneath the shattered chapel roof, but her words stumble, the ancient galdr faltering against the draugr’s malignant will. The air thickens with an uneasy stillness as the curse woven into the draugr resists the healer’s touch, the creature’s hatred undiminished. The draugr lunges again, its eyes glowing faintly with a cold light, and you feel the weight of dread pressing in. Yet your shield arm does not falter; you hold the line here—stalwart and unyielding. The ruin’s shadows deepen, the fight far from over. What will you do next to break the dread knot tightening around this forsaken place?
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Swing axe in a heavy overhead strike" [ref=e147] [cursor=pointer]
+          - button "Shield bash to stagger the draugr" [ref=e148] [cursor=pointer]
+          - button "Command Sable to distract the creature" [ref=e149] [cursor=pointer]
+          - button "Encourage Mirra to strengthen her chant" [ref=e150] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 28/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 18/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 1)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+      - generic [ref=e151]:
+        - heading "Dice" [level=3] [ref=e152]
+        - generic [ref=e153]:
+          - generic [ref=e154]: "18"
+          - generic [ref=e155]:
+            - strong [ref=e156]: warrior · Might
+            - generic [ref=e157]:
+              - text: 22 vs DC 15 →
+              - emphasis [ref=e158]: success
+        - generic [ref=e159]:
+          - generic [ref=e160]: "4"
+          - generic [ref=e161]:
+            - strong [ref=e162]: rogue · Stealth
+            - generic [ref=e163]:
+              - text: 9 vs DC 15 →
+              - emphasis [ref=e164]: failure
+        - generic [ref=e165]:
+          - generic [ref=e166]: "1"
+          - generic [ref=e167]:
+            - strong [ref=e168]: healer · Religion
+            - generic [ref=e169]:
+              - text: 5 vs DC 15 →
+              - emphasis [ref=e170]: failure
+      - button "▸ Agent Telemetry · turn 5 · 5208ms" [ref=e171] [cursor=pointer]

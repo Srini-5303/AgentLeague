@@ -1,0 +1,69 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e283]: The instant the black venom sinks into your veins, it feels as if shadowy tendrils coil in your blood, twisting and choking. Your breath catches as the Ruined Chapel’s heavy gate crashes shut behind you with a final, echoing slam. Beyond the iron bars, your companions’ startled cries and pounding fists fade, blocked by the thick wooden door now sealed tight. Aria’s voice trembles as she stoically begins the old healing galdr, her hands moving with practiced precision to ready the herbs and poultices from her pack. But despite her steady calm, the dark venom resists every effort, slipping beneath skin and sinew like a living shade. The power of the Silver Root seems to falter, unable to halt the venom’s cruel advance. A cold sweat breaks out across your forehead; the poison’s gnawing chill deepens in your joints, and a growing weakness clouds your vision. Outside, the muffled panic of your friends grows desperate, but they cannot reach you. The venom’s curse is a shadow’s touch — ancient and relentless — and for now, it binds you trapped, alone in the chapel’s cursed stillness. Time presses heavy, the air thick with unspoken dread, as you realize this affliction may demand a brutal choice before the night is through. The faint glow of the altar’s eye-sigil flickers in the gloom — a silent sentinel amid your growing darkness — and beyond the threshold, the world waits for your next move.
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Focus on Aria's healing galdr" [ref=e284] [cursor=pointer]
+          - button "Reach for the altar's glowing eye-sigil" [ref=e285] [cursor=pointer]
+          - button "Search chapel for antidote herbs" [ref=e286] [cursor=pointer]
+          - button "Brace against venom's creeping chill" [ref=e287] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 14/24
+          - generic [ref=e289]: poisoned
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 18/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 10/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 3)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+          - listitem [ref=e261]: Discovered partial awakening of the Vanir ward at the Ruined Chapel altar, revealing fragments of a map to the Moonlit Gate.
+      - generic [ref=e290]:
+        - heading "Dice" [level=3] [ref=e291]
+        - generic [ref=e292]:
+          - generic [ref=e293]: "1"
+          - generic [ref=e294]:
+            - strong [ref=e295]: healer · Medicine
+            - generic [ref=e296]:
+              - text: 4 vs DC 15 →
+              - emphasis [ref=e297]: failure
+      - button "▸ Agent Telemetry · turn 13 · 5342ms" [ref=e298] [cursor=pointer]

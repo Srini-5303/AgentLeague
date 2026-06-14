@@ -1,0 +1,77 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e328]: Your shield plants firmly, but the sharp agony in Bran’s leg screams betrayal — the draugr’s rusted blade tore deeper than you’d hoped. You grit your teeth, bracing on one leg to steady yourself against the pull of pain. The foul creature snarls, relentless and hungry. Beside you, Lyra kneels by Sable, hands steady even as the grave-rot seeps wickedly from the bite. She traces ancient runes with the purified water, the glow faint but flickering like a candle’s breath. The ward stutters — a partial barrier thrown up, enough to slow the creeping death but not halt it. Sable’s breathing is ragged, and you catch the tremble in her shoulder where the rot still glistens. The draugr, undeterred, shifts its gaze from you to the wounded mage, fangs bared anew. You feel the sharp edge of time — the battle is far from over, and every moment counts as the darkness gnaws at your friends. Your leg aches, the pain a cruel anchor, but your axe is ready. What will you do next?
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Strike draugr with mighty axe blow" [ref=e329] [cursor=pointer]
+          - button "Command Lyra to strengthen ward" [ref=e330] [cursor=pointer]
+          - button "Shield Bran and brace for attack" [ref=e331] [cursor=pointer]
+          - button "Pull back to regroup and heal" [ref=e332] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 14/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 17/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 10/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 19/20
+          - generic [ref=e334]: grave-rot
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 4)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+          - listitem [ref=e261]: Discovered partial awakening of the Vanir ward at the Ruined Chapel altar, revealing fragments of a map to the Moonlit Gate.
+          - listitem [ref=e318]: Obtained the Starwell Relic from the Ruined Chapel.
+      - generic [ref=e335]:
+        - heading "Dice" [level=3] [ref=e336]
+        - generic [ref=e337]:
+          - generic [ref=e338]: "7"
+          - generic [ref=e339]:
+            - strong [ref=e340]: warrior · Might
+            - generic [ref=e341]:
+              - text: 9 vs DC 15 →
+              - emphasis [ref=e342]: failure
+        - generic [ref=e343]:
+          - generic [ref=e344]: "9"
+          - generic [ref=e345]:
+            - strong [ref=e346]: mage · Arcana
+            - generic [ref=e347]:
+              - text: 13 vs DC 14 →
+              - emphasis [ref=e348]: partial
+      - button "▸ Agent Telemetry · turn 16 · 4382ms" [ref=e349] [cursor=pointer]

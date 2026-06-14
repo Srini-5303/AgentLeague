@@ -1,0 +1,69 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e313]: You lift the Starwell Relic free from the stone pedestal, its faint, eerie glow casting flickering shadows across the ruined walls of the chapel. The Shard’s cold surface hums faintly in your hand, a pulse slower and deeper than a heartbeat, as if the piece of Máni itself still clings to slumber beneath its fractured light. The mage steps closer to examine the runes carved into the Shard’s surface, fingers tracing its cold edges. Yet the ancient symbols remain stubbornly indecipherable—no hidden meaning reveals itself this time. The patchwork of fragmented power warps your vision; the broken runes resist your arcane insight, and the magic twists like a knot in your thoughts. Beside you, the healer murmurs a solemn galdr while laying a reassuring hand on the empty pedestal. Their voice is low, weaving threads of protection, honoring the relic as a sacred charge, neither prize nor weapon. A delicate balance trembles in the air, tethering you to the fate of Eldervale itself. The chamber’s shadows deepen, and the shard’s glow seems to pulse in resonance with the broken sky outside. Holding it now, you sense the tension between hope and peril, the quiet stirrings of forces both seen and unseen watching, waiting. The Starwell Relic is yours — but what will you do next, with the fragile light of Máni in your grasp?
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Study the shard's runes more closely" [ref=e314] [cursor=pointer]
+          - button "Consult the mage about the relic" [ref=e315] [cursor=pointer]
+          - button "Prepare to leave the ruined chapel" [ref=e316] [cursor=pointer]
+          - button "Invoke a protective galdr yourself" [ref=e317] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 14/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 18/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 10/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 4)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+          - listitem [ref=e261]: Discovered partial awakening of the Vanir ward at the Ruined Chapel altar, revealing fragments of a map to the Moonlit Gate.
+          - listitem [ref=e318]: Obtained the Starwell Relic from the Ruined Chapel.
+      - generic [ref=e319]:
+        - heading "Dice" [level=3] [ref=e320]
+        - generic [ref=e321]:
+          - generic [ref=e322]: "2"
+          - generic [ref=e323]:
+            - strong [ref=e324]: mage · Arcana
+            - generic [ref=e325]:
+              - text: 5 vs DC 15 →
+              - emphasis [ref=e326]: failure
+      - button "▸ Agent Telemetry · turn 15 · 5095ms" [ref=e327] [cursor=pointer]

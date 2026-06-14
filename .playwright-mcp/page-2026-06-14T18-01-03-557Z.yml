@@ -1,0 +1,75 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e263]: The ancient mechanism grinds with a slow, relentless rhythm, stone scraping against stone like the rasp of a forgotten beast awakening beneath the world. As the great gate shudders open, the faint scent of damp earth and old magic spills forth, mingling with the stale air of the ruined chapel. The runes that now glow softly along the gate’s edges pulse faintly—a gentle heartbeat of arcane life. Your careful scrutiny reveals no hostile wards or hidden traps; the sigil’s power has done its work well, offering passage without immediate peril. Sable slips through the darkened maw ahead with the silence of a shadow and the keen eyes of a seasoned scout. Her footsteps leave barely a sound against the cold stone floor, and after a tense moment she signals back—a narrow corridor stretches ahead, winding deeper beneath the chapel, lit only by the faint gleam of moon-ash that drifts through cracks in the ruined roof above. No signs of guardians stir in this moment, but the air hums with latent power, a subtle warning that the ancient vault beyond may yet conceal more than mere stones and echoes. The way forward yawns wide, the secrets of the Moonlit Gate beckoning your party into the darkness below. What steps do you take next?
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Proceed cautiously down the narrow corridor" [ref=e264] [cursor=pointer]
+          - button "Examine glowing runes on the gate" [ref=e265] [cursor=pointer]
+          - button "Signal Sable to scout ahead further" [ref=e266] [cursor=pointer]
+          - button "Prepare weapons and advance" [ref=e267] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 18/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 10/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 3)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+          - listitem [ref=e261]: Discovered partial awakening of the Vanir ward at the Ruined Chapel altar, revealing fragments of a map to the Moonlit Gate.
+      - generic [ref=e268]:
+        - heading "Dice" [level=3] [ref=e269]
+        - generic [ref=e270]:
+          - generic [ref=e271]: "15"
+          - generic [ref=e272]:
+            - strong [ref=e273]: mage · Arcana
+            - generic [ref=e274]:
+              - text: 18 vs DC 15 →
+              - emphasis [ref=e275]: success
+        - generic [ref=e276]:
+          - generic [ref=e277]: "12"
+          - generic [ref=e278]:
+            - strong [ref=e279]: rogue · Stealth
+            - generic [ref=e280]:
+              - text: 17 vs DC 15 →
+              - emphasis [ref=e281]: success
+      - button "▸ Agent Telemetry · turn 12 · 5149ms" [ref=e282] [cursor=pointer]

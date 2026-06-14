@@ -1,0 +1,74 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e186]: You grit your teeth as the draugr’s rusted axe cleaves through Bran’s side; the warrior staggers but holds firm, raising his shield just in time to deflect the fiend’s next swipe aimed at Lyra. You see Lyra falter, a deep slash across her arm spilling thick blood, but she slips behind Bran’s steadfast defense. Sable moves swiftly, cutting the undead menace from the side, snarling a warning that gives you all a moment’s breath. Bran’s shield is steady as a mountain, his stance unyielding, and with a grim roar, he drives his sword into the draugr’s exposed ribs, carving a deep wound. The creature snarls, weakened but relentless. At your knees, the healer chants the sacred galdr, pressing salves of sacred moon-ash into your wounds. Warmth radiates outward—Bran’s bleeding slows to a thin trickle, and Lyra’s breaths deepen, color returning faintly to her as the poison of claw and blade is drawn from their flesh. The slow bleed halts; strength begins its slow return. The chapel’s ruined stones echo with this violent rhythm of attack and healing. Your shield arm aches from holding, but you know the draugr’s fury will soon turn again. Bran’s eyes meet yours, steady despite pain — “Now, Sable, finish this!” The draugr lurches, wounded but maddened, claws slashing for a killing strike. The moment to act is now. What will you do next?
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Slash at draugr's exposed ribs" [ref=e187] [cursor=pointer]
+          - button "Shield Lyra from incoming strike" [ref=e188] [cursor=pointer]
+          - button "Command Sable to attack fiercely" [ref=e189] [cursor=pointer]
+          - button "Steady Bran, prepare counterattack" [ref=e190] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 28/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 18/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 1)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+      - generic [ref=e191]:
+        - heading "Dice" [level=3] [ref=e192]
+        - generic [ref=e193]:
+          - generic [ref=e194]: "16"
+          - generic [ref=e195]:
+            - strong [ref=e196]: warrior · Might
+            - generic [ref=e197]:
+              - text: 18 vs DC 15 →
+              - emphasis [ref=e198]: success
+        - generic [ref=e199]:
+          - generic [ref=e200]: "20"
+          - generic [ref=e201]:
+            - strong [ref=e202]: healer · Medicine
+            - generic [ref=e203]:
+              - text: 23 vs DC 15 →
+              - emphasis [ref=e204]: success
+      - button "▸ Agent Telemetry · turn 7 · 5607ms" [ref=e205] [cursor=pointer]

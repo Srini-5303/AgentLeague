@@ -1,0 +1,61 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e248]: You lean close to the altar, the chill stone pressing against your palm as you trace the sinuous lines of the glowing eye-sigil. Lyra’s whispered guidance sharpens your focus, revealing the layered meaning encoded in the runes—fragments of a map, hidden paths toward the Moonlit Gate whispered of in old tales. Your voice lilts the ancient words aloud, each syllable stirring the sigil’s light, now flickering uncertainly between brilliance and shadow. The mage watches, brow furrowed. “It is a Vanir ward, bound to Heimdall’s vigilance. Your reading has awakened something—yet only partially, a fragment of the power held within this stone.” A faint hum threads through the air, tentative, like the cautious blink of a watchful eye in the dark. The glow does not fully flare, but it pulses subtly, as if discerning your purpose. No watcher stirs from shadow, no immediate menace unfolds, but the air thickens with cautious portent. Beneath the altar, the relic hinted at by the sigil lies silent, waiting. The ward’s partial awakening suggests the path ahead may reveal itself gradually, drawing you deeper into the broken moon’s mysteries—if only you dare to touch the relic below. The others glance at you, lips tight with anticipation. What will you do next?
+      - generic [ref=e11]:
+        - textbox "What do you do?" [disabled] [ref=e12]
+        - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 18/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 10/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 1)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+      - generic [ref=e249]:
+        - heading "Dice" [level=3] [ref=e250]
+        - generic [ref=e251]:
+          - generic [ref=e252]: "8"
+          - generic [ref=e253]:
+            - strong [ref=e254]: mage · Arcana
+            - generic [ref=e255]:
+              - text: 13 vs DC 15 →
+              - emphasis [ref=e256]: partial
+      - button "▸ Agent Telemetry · turn 10 · 6586ms" [ref=e247] [cursor=pointer]

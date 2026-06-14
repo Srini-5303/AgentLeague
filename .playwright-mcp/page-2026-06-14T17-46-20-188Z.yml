@@ -1,0 +1,67 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e172]: "Blood seeps through your fingers as you press cloth to Aria’s torn ribs and Bran’s shattered shoulder. The draugr’s blade has cut deep, leaving bitter ice in your bones, but your hands glow faintly with the Silver Root's whispered power. A slow warmth spreads beneath your palms, staunching the bleeding though the pain lingers sharply. Aria’s breaths come ragged but steady; she grits her teeth, eyes fierce despite the crimson tracing her side. Bran sways, his shoulder a burning brand of agony, yet he holds his ground, the stubborn fire of a huscarl refusing to yield. Your galdr, though not strong enough for full healing, has pulled them back from the brink. The ruins around you groan in the cold wind, the shattered chapel’s eye-sigil faintly luminescent as twilight deepens. Outside, the restless moan of the howe-roads reminds you: the dead do not rest, and neither can you while the Shards of Máni lie hidden. With Aria and Bran wounded but still standing, the path ahead waits — will you press on through the chapel’s shadows, seek shelter to mend further, or call the others for counsel?"
+      - generic [ref=e10]:
+        - generic [ref=e65]:
+          - button "Press deeper into chapel shadows" [ref=e173] [cursor=pointer]
+          - button "Find shelter to tend wounds" [ref=e174] [cursor=pointer]
+          - button "Call others for counsel" [ref=e175] [cursor=pointer]
+          - button "Scout ruins for hidden threats" [ref=e176] [cursor=pointer]
+        - generic [ref=e11]:
+          - textbox "What do you do?" [ref=e12]
+          - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 28/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 18/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 1)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+      - generic [ref=e177]:
+        - heading "Dice" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - generic [ref=e180]: "10"
+          - generic [ref=e181]:
+            - strong [ref=e182]: healer · Medicine
+            - generic [ref=e183]:
+              - text: 12 vs DC 15 →
+              - emphasis [ref=e184]: partial
+      - button "▸ Agent Telemetry · turn 6 · 4307ms" [ref=e185] [cursor=pointer]

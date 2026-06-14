@@ -1,0 +1,61 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Eldervale — The Shards of Máni" [level=1] [ref=e5]
+    - button "Leave" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - paragraph [ref=e206]: The draugr’s axe sinks deep into Bran’s chest — a cruel, echoing crack that chills your blood. His breath stutters, and his grip falters as the cold seep of death threatens to claim him. At the same moment, Lyra cries out, clutching a savage clawed gash that rends her side. Both fall to their knees, blood pooling dark and hot beneath them. You drop beside Bran first, pressing your hands over the ragged wound. The ancient galdr you weave is old and solemn, a shield against the shadow’s claim. The power flows, but your chant falters, the chill breath of the draugr chilling your very soul. The bleeding slows, but the wound remains grave — the night still eager to swallow him whole. Turning hurriedly to Lyra, you find her pale and trembling, the deep gash cruel and raw. You raise your voice again, calling on the old chants to stem the flow and mend the flesh torn by death’s cruel hand. But the darkness is stubborn tonight, and though you hold the edge, the wound is still harsh and raw. The cold night presses close, heavy with the scent of iron and broken hopes. Around you, the Ruined Chapel groans under the weight of ancient sorrows. The faint glow of the eye-sigil on the altar flickers like a dying star — a fragile beacon amid the encroaching shadows. Time narrows to a brittle edge, desperate and urgent. Bran struggles to breathe, and Lyra’s hand trembles as she clutches her side. The night waits — silent, watchful, and unforgiving. What will you do now?
+      - generic [ref=e11]:
+        - textbox "What do you do?" [disabled] [ref=e12]
+        - button "Act" [disabled] [ref=e13]
+    - complementary [ref=e14]:
+      - generic [ref=e24]:
+        - heading "The Party" [level=3] [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Aria
+            - generic [ref=e29]: Wanderer
+          - generic [ref=e32]: 24/24
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Bran Ironvale
+            - generic [ref=e36]: Warrior
+          - generic [ref=e39]: 28/28
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Lyra Vey
+            - generic [ref=e43]: Mage
+          - generic [ref=e46]: 18/18
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: Sable Dusk
+            - generic [ref=e50]: Rogue
+          - generic [ref=e53]: 20/20
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Mirra of the Root
+            - generic [ref=e57]: Healer
+          - generic [ref=e60]: 20/20
+      - generic [ref=e15]:
+        - heading "Quest Journal" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Location
+            - generic [ref=e61]: The Ruined Chapel
+          - generic [ref=e20]:
+            - generic [ref=e21]: Quest
+            - generic [ref=e22]:
+              - text: Find the Starwell Relic
+              - emphasis [ref=e23]: (stage 1)
+        - list [ref=e62]:
+          - listitem [ref=e63]: Find the Starwell Relic before Kael Thorn does.
+      - generic [ref=e207]:
+        - heading "Dice" [level=3] [ref=e208]
+        - generic [ref=e209]:
+          - generic [ref=e210]: "10"
+          - generic [ref=e211]:
+            - strong [ref=e212]: healer · Medicine
+            - generic [ref=e213]:
+              - text: 13 vs DC 15 →
+              - emphasis [ref=e214]: partial
+      - button "▸ Agent Telemetry · turn 7 · 5607ms" [ref=e205] [cursor=pointer]
